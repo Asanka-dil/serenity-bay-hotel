@@ -5,6 +5,12 @@
     list-style: none;
     text-decoration: none;
 }
+body {
+    
+}
+html {
+    scroll-behavior: smooth;
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -13,7 +19,17 @@ nav {
     padding:20px 50px;
     background-color: hsl(191, 59%, 17%);
     justify-content: space-between;
+    align-items: center;
     
+}
+nav .img a {
+    display: flex;
+    flex-direction: row;
+    color: #e2c17c;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    top: 20px;
 }
 nav .navd a {
     color: hsl(0, 0%, 100%);
@@ -49,7 +65,7 @@ nav .navd {
 }
 .sec1 h3 {
     color: rgb(236, 225, 174);
-    font-size: 70px;
+    font-size: 60px;
     text-shadow: 0px 0px 15px black;
 }
 
@@ -171,4 +187,120 @@ nav .navd {
 
 .contact-details {
     margin-top: 20px;
+}
+.btn {
+    color: #645534;
+    background-color: #e2c17c;
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+
+}
+body.goldTheme nav,
+body.goldTheme #Aboutsec,
+body.goldTheme #Contactsec{
+    background-color: #e2c17c;
+}
+body.goldTheme nav .navd a {
+    color: #123f45;
+}
+body.goldTheme .navd :hover a {
+    color: #a07d1d;
+    background-color:#fff1d4;
+}
+body.goldTheme #Aboutsec h1 {
+    color: #00333a;
+}
+body.goldTheme #Aboutsec h3 {
+    color: #325458;
+}
+body.goldTheme #Aboutsec p {
+    color: #32494d;
+}
+
+body.goldTheme #Contactsec{
+    color: #214e53;
+}
+body.goldTheme nav .btn {
+    background-color: #214e53;
+    color: #bef7ff;
+}
+
+body.goldTheme .btn:hover {
+    color: #ffffff;
+    background-color: #006a75;
+}
+body.goldTheme #Roomssec {
+    background-color: #006a75;
+    color: #ffffff;
+    padding: 50px 25px;
+    text-align: center;
+}
+
+body.goldTheme #Roomssec h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+body.goldTheme #Roomssec > p {
+    font-size: 20px;
+}
+
+body.goldTheme .room-list {
+    display: flex;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+body.goldTheme .room-card {
+    flex: 1;
+    background-color: #006a75;
+    padding: 30px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+
+body.goldTheme .room-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+body.goldTheme .room-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+body.goldTheme .room-card a {
+    display: inline-block;
+    background-color: #a07d1d;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+body.goldTheme .room-card a:hover {
+    background-color: #b99329;
+    color: rgb(255, 255, 255);
+}
+
+body.goldTheme #Roomssec .room-note {
+    font-size: 16px;
+}
+body.goldTheme nav .img a {
+    display: flex;
+    flex-direction: row;
+    color: #00454d;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    top: 20px;
 }
